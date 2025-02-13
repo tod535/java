@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="500.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.hexlet.javafxrepair.controller.LoginController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="320.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Логин" />
+            <TextField fx:id="tfUsername" promptText="Имя пользователя" />
+            <Label text="Пароль" />
+            <PasswordField fx:id="pfPassword" promptText="Пароль" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <Label contentDisplay="TOP" text="Вход в аккаунт" BorderPane.alignment="TOP_CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="btnEnter" alignment="BOTTOM_CENTER" mnemonicParsing="false" text="Войти" BorderPane.alignment="BOTTOM_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+         </padding>
+      </Button>
+   </bottom>
+</BorderPane>

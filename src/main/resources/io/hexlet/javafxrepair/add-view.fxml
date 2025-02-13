@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.hexlet.javafxrepair.controller.AddController">
+   <children>
+      <Label text="Оставить заявку">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Номер заявки" />
+      <TextField fx:id="tfRequestNumber" />
+      <Label layoutX="10.0" layoutY="10.0" text="Дата добавления" />
+      <DatePicker fx:id="dpStartDate" layoutX="10.0" layoutY="27.0" />
+      <Label layoutX="10.0" layoutY="52.0" text="Вид оргтехники" />
+      <TextField fx:id="tfType" layoutX="10.0" layoutY="69.0" />
+      <Label layoutX="10.0" layoutY="94.0" text="Модель" />
+      <TextField fx:id="tfModel" layoutX="10.0" layoutY="111.0" />
+      <Label layoutX="10.0" layoutY="136.0" text="Описание проблемы" />
+      <TextArea fx:id="taProblem" layoutX="10.0" layoutY="153.0" prefHeight="0.0" prefWidth="250.0" wrapText="true" />
+      <Label layoutX="10.0" layoutY="178.0" text="ФИО клиента" />
+      <TextField fx:id="tfFullName" layoutX="10.0" layoutY="195.0" />
+      <Label layoutX="10.0" layoutY="220.0" text="Номер телефона" />
+      <TextField fx:id="tfPhone" layoutX="10.0" layoutY="237.0" />
+      <Label layoutX="10.0" layoutY="262.0" text="Статус заявки" />
+      <MenuButton fx:id="mbStatus" mnemonicParsing="false" text="Статус...">
+        <items>
+          <MenuItem fx:id="miNew" mnemonicParsing="false" text="Новая заявка" />
+          <MenuItem fx:id="miProcess" mnemonicParsing="false" text="В процессе ремонта" />
+            <MenuItem fx:id="miFinish" mnemonicParsing="false" text="Завершена" />
+        </items>
+      </MenuButton>
+      <Button fx:id="btnSubmit" mnemonicParsing="false" text="Отправить">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+   </padding>
+</VBox>
